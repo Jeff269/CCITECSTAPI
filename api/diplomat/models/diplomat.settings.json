@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "diplomats",
+  "info": {
+    "name": "Diplomat",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "directed_to": {
+      "type": "richtext"
+    },
+    "why_specialize": {
+      "type": "richtext"
+    },
+    "class_start": {
+      "type": "datetime"
+    },
+    "payment": {
+      "type": "richtext"
+    },
+    "teachers": {
+      "type": "richtext"
+    },
+    "courses": {
+      "collection": "course",
+      "via": "diplomat"
+    },
+    "photo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
