@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payment_methods",
+  "info": {
+    "name": "payment-method",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "businessname": {
+      "type": "text"
+    },
+    "accountnumber": {
+      "type": "text"
+    },
+    "mobileapp": {
+      "type": "boolean"
+    }
+  }
+}

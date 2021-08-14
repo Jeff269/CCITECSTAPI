@@ -23,14 +23,8 @@
     "competencie": {
       "type": "richtext"
     },
-    "payment": {
-      "type": "richtext"
-    },
     "topics": {
       "type": "richtext"
-    },
-    "teacher": {
-      "type": "string"
     },
     "photo": {
       "model": "file",
@@ -50,6 +44,21 @@
     "diplomat": {
       "via": "courses",
       "model": "diplomat"
+    },
+    "investment_courses": {
+      "collection": "investment-course",
+      "via": "course"
+    },
+    "teaching_engineer": {
+      "model": "teacher",
+      "via": "courses"
+    },
+    "temary_courses": {
+      "collection": "unit",
+      "via": "course"
+    },
+    "url_brochure": {
+      "type": "text"
     }
   }
 }

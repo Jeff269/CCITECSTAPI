@@ -23,12 +23,6 @@
     "class_start": {
       "type": "datetime"
     },
-    "payment": {
-      "type": "richtext"
-    },
-    "teachers": {
-      "type": "richtext"
-    },
     "courses": {
       "collection": "course",
       "via": "diplomat"
@@ -43,6 +37,22 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "investment_diplomats": {
+      "collection": "investment-diplomat",
+      "via": "diplomat"
+    },
+    "teaching_engineers": {
+      "collection": "teacher",
+      "via": "diplomats",
+      "dominant": true
+    },
+    "temary_diplomats": {
+      "collection": "temary-diplomat",
+      "via": "diplomat"
+    },
+    "url_brochure": {
+      "type": "text"
     }
   }
 }
