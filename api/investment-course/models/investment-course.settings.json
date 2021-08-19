@@ -18,9 +18,9 @@
       "collection": "investment-course-item",
       "via": "investment_course"
     },
-    "course": {
+    "courses": {
       "via": "investment_courses",
-      "model": "course"
+      "collection": "course"
     }
   }
 }

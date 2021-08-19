@@ -40,7 +40,8 @@
     },
     "investment_diplomats": {
       "collection": "investment-diplomat",
-      "via": "diplomat"
+      "via": "diplomats",
+      "dominant": true
     },
     "teaching_engineers": {
       "collection": "teacher",
@@ -53,6 +54,10 @@
     },
     "url_brochure": {
       "type": "text"
+    },
+    "old": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

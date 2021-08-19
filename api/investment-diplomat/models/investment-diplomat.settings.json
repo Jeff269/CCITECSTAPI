@@ -26,9 +26,9 @@
     "certification": {
       "type": "decimal"
     },
-    "diplomat": {
+    "diplomats": {
       "via": "investment_diplomats",
-      "model": "diplomat"
+      "collection": "diplomat"
     }
   }
 }

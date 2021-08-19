@@ -47,7 +47,8 @@
     },
     "investment_courses": {
       "collection": "investment-course",
-      "via": "course"
+      "via": "courses",
+      "dominant": true
     },
     "teaching_engineer": {
       "model": "teacher",
@@ -59,6 +60,10 @@
     },
     "url_brochure": {
       "type": "text"
+    },
+    "old": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
