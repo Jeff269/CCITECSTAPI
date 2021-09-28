@@ -58,6 +58,16 @@
     "old": {
       "type": "boolean",
       "default": false
+    },
+    "culminate": {
+      "type": "boolean",
+      "default": false
+    },
+    "discount_date": {
+      "type": "string"
+    },
+    "percentage_discount": {
+      "type": "string"
     }
   }
 }

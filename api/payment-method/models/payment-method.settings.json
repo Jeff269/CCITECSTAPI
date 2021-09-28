@@ -11,17 +11,37 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string"
-    },
     "businessname": {
       "type": "text"
     },
     "accountnumber": {
       "type": "text"
     },
-    "mobileapp": {
-      "type": "boolean"
+    "CCI": {
+      "type": "string"
+    },
+    "QRCode": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "interbank",
+        "bbva",
+        "bancodelanacion",
+        "bcp",
+        "yape",
+        "tunki",
+        "plin"
+      ]
     }
   }
 }
